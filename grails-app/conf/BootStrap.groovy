@@ -17,14 +17,15 @@ class BootStrap {
             createAdminUser(roleAdmin)
         }
         production {
-
+            createAdminUser(roleAdmin)
         }
     }
 
-    private void createAdminUser(Role roleAdmin) {
+    private static void createAdminUser(Role roleAdmin) {
         if (UserRole.findAllByRole(roleAdmin).isEmpty()) {
-            def admin = new User(email: "testxke@yopmail.com", username: "testxke", enabled: true,
-                    password: "password").save(true)
+            def admin = new User(email: 'pvardanega@xebia.fr', password: 'password',
+                    username: 'Pierre-Jean Vardanega', oauthId: "102834131238641115022",
+                    enabled: true).save(flush: true)
             UserRole.create(admin, roleAdmin, true)
         }
     }

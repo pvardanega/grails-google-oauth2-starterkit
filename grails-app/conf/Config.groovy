@@ -2,10 +2,7 @@
 // config files can be ConfigSlurper scripts, Java properties files, or classes
 // in the classpath in ConfigSlurper format
 
-// grails.config.locations = [ "classpath:${appName}-config.properties",
-//                             "classpath:${appName}-config.groovy",
-//                             "file:${userHome}/.grails/${appName}-config.properties",
-//                             "file:${userHome}/.grails/${appName}-config.groovy"]
+grails.config.locations = [ "classpath:oauth.properties" ]
 
 // if (System.properties["${appName}.config.location"]) {
 //    grails.config.locations << "file:" + System.properties["${appName}.config.location"]
@@ -94,3 +91,6 @@ log4j = {
 grails.plugins.springsecurity.userLookup.userDomainClassName = 'fr.xebia.xke.user.User'
 grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'fr.xebia.xke.user.UserRole'
 grails.plugins.springsecurity.authority.className = 'fr.xebia.xke.user.Role'
+
+// OAuth
+auth.providers = [google: 'google']

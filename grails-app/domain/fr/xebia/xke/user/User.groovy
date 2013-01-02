@@ -6,6 +6,7 @@ class User {
 
 	String username
 	String email
+    String oauthId
 	String password
 	boolean enabled
 	boolean accountExpired
@@ -15,6 +16,7 @@ class User {
 	static constraints = {
 		username blank: false, unique: true
         email blank: false, unique: true, email: true
+        oauthId nullable: true, unique: true
 		password blank: false
 	}
 
