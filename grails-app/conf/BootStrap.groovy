@@ -1,6 +1,6 @@
-import fr.xebia.xke.user.Role
-import fr.xebia.xke.user.User
-import fr.xebia.xke.user.UserRole
+import fr.pvardanega.user.Role
+import fr.pvardanega.user.User
+import fr.pvardanega.user.UserRole
 
 class BootStrap {
 
@@ -23,7 +23,7 @@ class BootStrap {
 
     private static void createAdminUser(Role roleAdmin) {
         if (UserRole.findAllByRole(roleAdmin).isEmpty()) {
-            def admin = new User(email: 'pvardanega@xebia.fr', password: 'password',
+            def admin = new User(email: 'pierrejean.vardanegagmail.com', password: 'password',
                     username: 'Pierre-Jean Vardanega', oauthId: "102834131238641115022",
                     enabled: true).save(flush: true)
             UserRole.create(admin, roleAdmin, true)

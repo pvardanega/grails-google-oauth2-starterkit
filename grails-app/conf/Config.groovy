@@ -88,9 +88,9 @@ log4j = {
 }
 
 // Added by the Spring Security Core plugin:
-grails.plugins.springsecurity.userLookup.userDomainClassName = 'fr.xebia.xke.user.User'
-grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'fr.xebia.xke.user.UserRole'
-grails.plugins.springsecurity.authority.className = 'fr.xebia.xke.user.Role'
+grails.plugins.springsecurity.userLookup.userDomainClassName = 'fr.pvardanega.user.User'
+grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'fr.pvardanega.user.UserRole'
+grails.plugins.springsecurity.authority.className = 'fr.pvardanega.user.Role'
 
 // OAuth
 auth.providers = [google: 'google']

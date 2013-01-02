@@ -18,10 +18,6 @@
 
     <form class="form-signin">
         <p>
-            <g:img dir="images" file="xebia.png" />
-        </p>
-        <hr/>
-        <p>
             <g:link controller="auth" action="signin" params="[provider: 'google']" class="btn btn-block">
                 <g:message code="auth.with.google"/>
             </g:link>

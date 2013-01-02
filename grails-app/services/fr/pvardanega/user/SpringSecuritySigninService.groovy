@@ -1,5 +1,6 @@
-package fr.xebia.xke.user
+package fr.pvardanega.user
 
+import fr.pvardanega.user.User
 import org.codehaus.groovy.grails.plugins.springsecurity.GormUserDetailsService
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken
 import org.springframework.security.core.context.SecurityContextHolder

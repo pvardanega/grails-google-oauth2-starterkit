@@ -1,4 +1,4 @@
-package fr.xebia.xke.user
+package fr.pvardanega.user
 
 import org.codehaus.groovy.grails.plugins.springsecurity.SpringSecurityUtils
 

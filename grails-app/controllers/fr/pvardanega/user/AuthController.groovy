@@ -1,4 +1,4 @@
-package fr.xebia.xke.user
+package fr.pvardanega.user
 
 class AuthController {
 
@@ -32,13 +32,6 @@ class AuthController {
         def requestToken = authInfo.requestToken
         def accessToken = service.getAccessToken(authInfo.service, params, requestToken)
         session["${params.provider}_authToken"] = accessToken
-
-        def profile = service.getProfile(authInfo.service, accessToken)
-        if (!profile.email.endsWith("@xebia.fr")) {
-            flash.message = message(code: "auth.invalid.email")
-            redirect controller: "login", action: "auth"
-            return
-        }
         session["${params.provider}_profile"] = profile
 
         def uid = profile.uid

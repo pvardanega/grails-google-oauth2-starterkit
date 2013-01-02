@@ -1,4 +1,4 @@
-package fr.xebia.xke.user
+package fr.pvardanega.user
 
 import org.scribe.builder.ServiceBuilder
 import org.scribe.model.Token

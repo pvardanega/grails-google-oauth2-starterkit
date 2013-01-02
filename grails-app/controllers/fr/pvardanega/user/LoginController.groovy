@@ -1,4 +1,4 @@
-package fr.xebia.xke.user
+package fr.pvardanega.user
 
 import grails.converters.JSON
 

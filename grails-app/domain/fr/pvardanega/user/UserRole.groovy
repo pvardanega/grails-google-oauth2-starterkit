@@ -1,4 +1,4 @@
-package fr.xebia.xke.user
+package fr.pvardanega.user
 
 import org.apache.commons.lang.builder.HashCodeBuilder
 
