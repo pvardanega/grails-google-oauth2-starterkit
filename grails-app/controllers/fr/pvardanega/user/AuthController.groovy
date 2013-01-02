@@ -32,6 +32,7 @@ class AuthController {
         def requestToken = authInfo.requestToken
         def accessToken = service.getAccessToken(authInfo.service, params, requestToken)
         session["${params.provider}_authToken"] = accessToken
+        def profile = service.getProfile(authInfo.service, accessToken)
         session["${params.provider}_profile"] = profile
 
         def uid = profile.uid
